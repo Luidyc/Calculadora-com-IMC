@@ -6,13 +6,13 @@ using namespace std;
     float peso,altura;
 
 int msg() {
-    cout<< "Escolha uma operação"   << endl;
+    cout<< "Escolha uma operaÃ§Ã£o"   << endl;
     cout<< "1 = Soma"               << endl;
-    cout<< "2 = Subtração"          << endl;
-    cout<< "3 = Multiplicação"      << endl;
-    cout<< "4 = Divisão"            << endl;
+    cout<< "2 = SubtraÃ§Ã£o"          << endl;
+    cout<< "3 = MultiplicaÃ§Ã£o"      << endl;
+    cout<< "4 = DivisÃ£o"            << endl;
     cout<< "5 = Calcular IMC"       << endl;
-    cout<<"Digite sua opção de operação"<<endl;
+    cout<<"Digite sua opÃ§Ã£o de operaÃ§Ã£o"<<endl;
     cin>>op;
     return op;
 }
@@ -44,24 +44,24 @@ int operatorimc() {
             float imc = peso/(altura*altura);
             if (imc > 40) {
                 cout<<"OBESIDADE GRAU III"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             } else if (imc >= 35 && imc < 39.9) {
                 cout<<"OBESIDADE GRAU II"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             }else if (imc >= 30 && imc < 34.9) {
                 cout<<"OBESIDADE GRAU I"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             }else if (imc >= 25 && imc < 29.9) {
                 cout<<"SOBREPESO"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             }else if (imc >= 18.5 && imc < 24.9) {
                 cout<<"PESO NORMAL"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             }else if (imc < 18.5) {
                 cout<<"ABAIXO DO PESO"<<endl;
-                cout<<"SEU IMC É "<<imc<<endl;
+                cout<<"SEU IMC Ã‰ "<<imc<<endl;
             }
-    else { cout << "INSIRA UM OPERADOR VÁLIDO"; }
+    else { cout << "INSIRA UM OPERADOR VÃLIDO"; }
 }
 
 
